@@ -1,0 +1,33 @@
+// Variables
+
+$dawn-blue: #1a3050;
+$dark-dawn-blue: #142638;
+$grain-yellow: #e8e3d1;
+$pale-yellow: #ffd481;
+
+// Resetting
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+
+	background-color: $grain-yellow;
+	color: $dark-dawn-blue;
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+	body {
+		background-color: $dark-dawn-blue;
+		color: $grain-yellow;
+	}
+}
